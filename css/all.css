@@ -1,0 +1,348 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+* {
+    box-sizing: border-box;
+
+}
+
+
+
+
+/* reset */
+.text-size-lg {
+    font-family: sans-serif;
+    font-size: 80px;
+    font-style: italic;
+    font-weight: 900;
+    line-height: 94px;
+    margin-bottom: 32px;
+}
+
+.text-size-md {
+    font-family: sans-serif;
+    font-size: 64px;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.text-size-sm {
+    font-family: sans-serif;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 42px;
+}
+
+.wrap {
+    max-width: 1920px;
+}
+
+/* banner */
+
+.header {
+    background-image: url(../images/banner.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 960px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.5px solid gray;
+}
+
+.bannerContent {
+    color: white;
+    text-align: left;
+    padding-top: 100px;
+
+}
+
+.mediaIcon {
+    margin-right: 16px;
+    text-decoration: none;
+}
+
+
+/* about */
+
+.About {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 64px 0 56px 0;
+}
+
+.aboutContent {
+    text-align: center;
+    color: black;
+}
+
+.aboutList {
+    position: relative;
+    text-indent: 20px;
+}
+
+.ball1::before,
+.ball2::before,
+.ball3::before {
+    content: '';
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    background: #891818 0% 0% no-repeat padding-box;
+    border-radius: 50%;
+    top: 9px;
+}
+
+.ball1::before {
+    left: 42px;
+}
+
+.ball2::before {
+    left: 102px;
+}
+
+.ball3::before {
+    left: 36px;
+}
+
+/* brand */
+
+.brand {
+    padding: 64px 0 160px 0;
+    background: #000000 0% 0% no-repeat padding-box;
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+.pic1 img {
+    margin: 48px 0 40px 0;
+    width: 792px;
+    height: 416px;
+}
+
+.pic2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pic2 img {
+    width: 588px;
+    height: 416px;
+    margin-right: 24px;
+}
+
+
+
+
+
+
+/* other works */
+
+
+.otherWorks-title {
+    text-align: center;
+    padding: 64px 0 128px 0;
+
+}
+
+.otherWorks-title h2 {
+    margin-bottom: 24px;
+}
+
+
+.otherWorks-bg {
+    width: 100%;
+    background-image: url(../images/photo-1561291386-5be50364cfb5.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.ContentBox {
+    display: flex;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: sans-serif;
+    font-style: italic;
+}
+
+.ContentBox .box {
+    margin: 0 24px 102px 0;
+}
+
+.ContentBox .box>img {
+
+    margin-bottom: 16px;
+}
+
+.otherWorks-main {
+    margin-top: -80px;
+    /* 漂浮版效果 */
+}
+
+
+
+
+
+
+/* footer */
+
+.footer {
+    background-color: black;
+    width: 100%;
+    padding: 64px 0 80px 0;
+    text-align: center;
+    color: white;
+    margin: 0 auto;
+}
+
+.footer>h2,
+p {
+    margin-bottom: 16px;
+}
